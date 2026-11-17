@@ -1,0 +1,19 @@
+.home {
+  background-color: #111;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home img {
+  display: block;
+}
+
+.ascuns-vizual {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

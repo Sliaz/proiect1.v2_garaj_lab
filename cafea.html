@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Garaj Retro - Dozator Cafea</title>
+    <link rel="icon" type="image/png" href="141883.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cafea.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-bar">
+        <a href="index.html" class="logo">GARAGE // HUB</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="terminal.html">Terminal</a></li>
+          <li><a href="radio.html">Radio</a></li>
+          <li><a href="cafea.html" class="active">Cafea</a></li>
+          <li class="dropdown">
+            <a href="#" class="drop-btn">Opțiuni ▼</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Setări Sistem</a></li>
+              <li><a href="#">Despre Proiect</a></li>
+              <li><a href="#">Manual Utilizare</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="continut continut-lat">
+      <section class="titlu-sectiune">
+        <h1>TERMINAL COMANDĂ CAFEA</h1>
+        <p>Selectează parametrii băuturii tale de la dozatorul industrial.</p>
+      </section>
+
+      <div class="cafea-grid-container">
+        <div class="coloana-formular">
+          <form action="#" method="get">
+            <fieldset class="grup-optiune">
+              <legend>1. Tip Băutură</legend>
+              <div class="optiuni-grid">
+                <label
+                  ><input type="radio" name="tip" value="espresso" checked />
+                  Espresso Clasic</label
+                >
+                <label
+                  ><input type="radio" name="tip" value="cappuccino" />
+                  Cappuccino Industrial</label
+                >
+                <label
+                  ><input type="radio" name="tip" value="latte" /> Caffè
+                  Latte</label
+                >
+                <label
+                  ><input type="radio" name="tip" value="americano" /> Americano
+                  Aeroport</label
+                >
+              </div>
+            </fieldset>
+
+            <fieldset class="grup-optiune">
+              <legend>2. Nivel Intensitate</legend>
+              <div class="optiuni-grid">
+                <label
+                  ><input type="radio" name="intensitate" value="slab" /> Ușor
+                  (Soft)</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="intensitate"
+                    value="mediu"
+                    checked
+                  />
+                  Standard</label
+                >
+                <label
+                  ><input type="radio" name="intensitate" value="maxim" /> Maxim
+                  (Overclocked)</label
+                >
+              </div>
+            </fieldset>
+
+            <div class="grup-select">
+              <label for="boabe">3. Sortiment Boabe:</label>
+              <select id="boabe" name="boabe">
+                <option value="arabica">Arabica 100% (Brazilia)</option>
+                <option value="robusta">Robusta Forță (Dark Roast)</option>
+                <option value="blend">Blend Secret de Garaj</option>
+              </select>
+            </div>
+
+            <div class="grup-select">
+              <label for="marime">4. Dimensiune Pahar:</label>
+              <select id="marime" name="marime">
+                <option value="S">Small (200ml)</option>
+                <option value="M" selected>Medium (400ml)</option>
+                <option value="L">Large (600ml - Aeroport)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-comanda">PREPARĂ BĂUTURA</button>
+          </form>
+        </div>
+
+        <aside class="coloana-ecran">
+          <div class="ecran-terminal">
+            <div class="status-lumina"></div>
+            <h2>SYSTEM READY</h2>
+            <pre class="ascii-coffee">
+   (  )   (   )
+    ) (    ) (
+  _____________
+  \           / ]
+   \         / /
+    \_______/ /
+     `-----`
+</pre
+            >
+            <p class="text-status">Așteptare comandă operator...</p>
+            <div class="detalii-sistem">
+              <p>STARE: ONLINE</p>
+              <p>PRESIUNE: 9 BAR</p>
+              <p>TEMPERATURĂ: 92°C</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; Made by Patrasescu Alexandru</p>
+      <p><a href="index.html">← Înapoi la Harta Garajului</a></p>
+    </footer>
+  </body>
+</html>
