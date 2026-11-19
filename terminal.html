@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Garaj Retro - Terminal Sistem</title>
+    <link rel="icon" type="image/png" href="141883.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="terminal.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-bar">
+        <a href="index.html" class="logo">GARAGE // HUB</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="terminal.html" class="active">Terminal</a></li>
+          <li><a href="radio.html">Radio</a></li>
+          <li><a href="cafea.html">Cafea</a></li>
+          <li class="dropdown">
+            <a href="#" class="drop-btn">Opțiuni ▼</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Setări Sistem</a></li>
+              <li><a href="#">Despre Proiect</a></li>
+              <li><a href="#">Manual Utilizare</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="continut">
+      <section class="titlu-sectiune">
+        <h1>TERMINAL SISTEM</h1>
+        <p>Trimite comenzi către mainframe-ul garajului.</p>
+      </section>
+
+      <div class="monitor-frame">
+        <input
+          type="radio"
+          name="terminal-cmd"
+          id="c-status"
+          class="cmd-radio"
+        />
+        <input type="radio" name="terminal-cmd" id="c-brew" class="cmd-radio" />
+        <input type="radio" name="terminal-cmd" id="c-scan" class="cmd-radio" />
+
+        <div class="terminal-top-bar">
+          <span>SESSION: ROOT@GARAGE-MAINFRAME</span>
+          <span
+            >STATUS: CONEXIUNE SECURIZATĂ <span class="cursor-blink"></span
+          ></span>
+        </div>
+
+        <pre class="ascii-banner">
+  ____    _    ____      _    ____ _____    ___  ____  
+ / ___|  / \  |  _ \    / \  / ___| ____|  / _ \/ ___| 
+| |  _  / _ \ | |_) |  / _ \| |  _|  _|   | | | \___ \ 
+| |_| |/ ___ \|  _ &lt;  / ___ \ |_| | |___  | |_| |___) |
+ \____/_/   \_\_| \_\/_/   \_\____|_____|  \___/|____/ 
+</pre
+        >
+
+        <div class="terminal-screen-output">
+          <div class="welcome-msg">
+            Sistem pornit. Folosește butoanele de mai jos pentru a trimite
+            comenzi către mainframe.
+          </div>
+
+          <div class="output-line out-status">
+            <div class="cmd-echo">root@garage:~$ status</div>
+            <div class="cmd-result">
+              CPU: 80486DX2 [OK] | Memorie: 16MB [OK] | Cafetieră: 92°C | Radio:
+              101.5 FM
+            </div>
+          </div>
+
+          <div class="output-line out-brew">
+            <div class="cmd-echo">root@garage:~$ brew</div>
+            <div class="cmd-result">
+              Trimitere semnal către dozatorul industrial... Cafea espresso
+              preparată cu succes!
+            </div>
+          </div>
+
+          <div class="output-line out-scan">
+            <div class="cmd-echo">root@garage:~$ scan</div>
+            <div class="cmd-result">
+              Scanare frecvențe... Găsit post local: Garage Rock FM (Signal:
+              98%)
+            </div>
+          </div>
+        </div>
+
+        <div class="command-trigger-box">
+          <span class="prompt-label">Alege comanda:</span>
+          <label for="c-status" class="cmd-btn">status</label>
+          <label for="c-brew" class="cmd-btn">brew</label>
+          <label for="c-scan" class="cmd-btn">scan</label>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; Made by Patrasescu Alexandru</p>
+      <p><a href="index.html">← Înapoi la Harta Garajului</a></p>
+    </footer>
+  </body>
+</html>
